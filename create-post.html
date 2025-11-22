@@ -29,26 +29,29 @@
                 <li class="nav-item">
                     <a class="nav-link text-black" href="#">Pricing</a>
                 </li>
+                <li class="nav-item">
+                    <button class="btn btn-success" onclick="logout()">Logout</button>
+                </li>
             </ul>
         </div>
     </div>
     <nav class="navbar z-2 shadow-sm position-fixed top-0 w-100 navbar-expand-md bg-green text-white">
         <div class="container-fluid ">
             <a class="navbar-brand text-white" href="#">Social Book</a>
-            <!-- <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            </button> -->
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav justify-content-center gap-4 w-100">
                     <li class="nav-item">
                         <a class="nav-link text-white " aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white text-decoration-underline" href="./create-post.html">Create Posts</a>
+                        <a class="nav-link text-white text-decoration-underline" href="./create-post.html">Create
+                            Posts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-success" onclick="logout()">Logout</button>
                     </li>
                 </ul>
             </div>
@@ -94,7 +97,8 @@
                             <label for="imageUpload" class="form-label">
                                 <i class="bi bi-image"></i> Add Image
                             </label>
-                            <input class="form-control" type="url" id="imageUpload" accept="image/*" onchange="previewImageURL(this.value)">
+                            <input class="form-control" type="url" id="imageUpload" accept="image/*"
+                                onchange="previewImageURL(this.value)">
                             <div id="imagePreview" class="mt-3"></div>
                         </div>
 
@@ -106,14 +110,14 @@
                                 placeholder="#hashtag #anotherTag">
                         </div>
 
-                            <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
-                                <button type="button" class="btn btn-outline-secondary" onclick="clearForm()">
-                                    <i class="bi bi-x-circle"></i> Clear
-                                </button>
-                                <button type="button" onclick="createPost()" class="btn btn-primary bg-green border-0">
-                                    <i class="bi bi-send"></i> Post
-                                </button>
-                            </div>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+                            <button type="button" class="btn btn-outline-secondary" onclick="clearForm()">
+                                <i class="bi bi-x-circle"></i> Clear
+                            </button>
+                            <button type="button" onclick="createPost()" class="btn btn-primary bg-green border-0">
+                                <i class="bi bi-send"></i> Post
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

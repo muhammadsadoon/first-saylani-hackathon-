@@ -21,7 +21,7 @@ function formSubmit() {
                         Swal.fire({
                             icon: "success",
                             title: "Let's Go...",
-                        }).then((result) => { if (result.isConfirmed) { location.href = "http://127.0.0.1:3000/" } });
+                        }).then((result) => { if (result.isConfirmed) { location.href = "./" } });
                     } else {
                         throw "this email is already existed !"
                     }
