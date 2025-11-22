@@ -1,0 +1,120 @@
+:root {
+    --brand: #01d449;
+    --brand-dark: #019a37;
+    --muted: #6c757d;
+    --bg-start: #f8fafc;
+    --bg-end: #eef2f6;
+}
+
+
+.auth-card {
+    max-width: 900px;
+    margin: 6vh auto;
+    border: 0;
+    overflow: hidden;
+}
+
+.auth-left {
+    background: linear-gradient(180deg, rgba(1, 212, 73, 0.07), rgba(1, 212, 73, 0.02)), url('assets/img/login-illustration.jpg') center/cover no-repeat;
+    min-height: 280px;
+}
+
+@media (max-width: 767px) {
+    .auth-left {
+        display: none;
+    }
+}
+
+.social-btn {
+    gap: .5rem;
+}
+.bg-green{
+    background-color: var(--brand-dark);
+}
+
+/* Brand styles */
+.btn-primary {
+    background-color: var(--brand) !important;
+    border-color: var(--brand) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--brand-dark) !important;
+    border-color: var(--brand-dark) !important;
+}
+
+/* social outline buttons use brand tint */
+.social-btn .btn-outline-secondary {
+    color: var(--brand);
+    border-color: rgba(1, 212, 73, 0.35);
+}
+
+.social-btn .btn-outline-secondary:hover {
+    background-color: rgba(1, 212, 73, 0.08);
+    color: var(--brand-dark);
+    border-color: rgba(1, 212, 73, 0.5);
+}
+
+a {
+    color: var(--brand);
+}
+
+a:hover {
+    color: var(--brand-dark);
+    text-decoration: underline;
+}
+
+.card-title {
+    color: #0b2f1a;
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(90deg, rgba(1,212,73,0.14), rgba(1,212,73,0.04));
+    padding: 1.25rem;
+    border-radius: .75rem;
+    color: #08221a;
+}
+
+.hero-section .hero-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+}
+
+.hero-section .btn-light {
+    background: #fff;
+    color: var(--brand-dark);
+    border: 0;
+}
+
+/* Dark theme overrides */
+.dark-theme {
+    --bg: #0b1220;
+    --fg: #e6eef6;
+}
+
+.dark-theme body {
+    background: #071017;
+    color: #e6eef6;
+}
+
+.dark-theme .card {
+    background: #09202b;
+    color: #e6eef6;
+}
+
+.dark-theme .navbar.bg-green {
+    background-color: #0b6b41 !important;
+}
+
+.theme-preview {
+    min-width: 160px;
+}
