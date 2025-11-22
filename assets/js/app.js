@@ -1,3 +1,7 @@
+if(!localStorage.getItem("user")){
+	location.href = "/signin.html"
+}
+
 // Render posts feed from localStorage (key: 'posts')
 function timeAgo(iso) {
 	const d = new Date(iso);
