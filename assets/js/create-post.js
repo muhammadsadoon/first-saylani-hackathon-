@@ -89,6 +89,7 @@ function createPost() {
 
 	posts.unshift(post);
 	localStorage.setItem('posts', JSON.stringify(posts));
+	location.href = "/";
 
 	// Success toast/modal
 	Swal.fire({ icon: 'success', title: 'Posted', text: 'Post created successfully!' });

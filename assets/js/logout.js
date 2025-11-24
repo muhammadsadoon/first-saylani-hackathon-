@@ -1,3 +1,4 @@
 function logout(){
-    localStorage.removeItem("user")
+    localStorage.removeItem("user");
+    window.location.reload();
 }
